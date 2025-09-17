@@ -1,17 +1,11 @@
 import "./App.css";
-import Greeting from "./components/title";
-import Description from "./components/description";
-import Message from "./components/message";
+import Box from "./components/box";
 
 const App = () => {
   return (
     <>
-      <h1>My name is Big Mike.</h1>
-      <Greeting />
-      <Description />
-      <Message text="Props are pretty simple" bgColor="Yellow" />
-      <Message text="Hola programmers!" bgColor="CornflowerBlue" />
-      <Message text="Big Mike was here." bgColor="Beige" />
+      <Box label="My name is Mike" bgColor="CornflowerBlue" textColor="White" career="Web Developer" large={true} />
+      <Box label="My name is Lisa" bgColor="Lavender" textColor="Purple" career="Cyber Security" large={false} />
     </>
   );
 };
